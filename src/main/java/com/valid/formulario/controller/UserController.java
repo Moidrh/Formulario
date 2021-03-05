@@ -40,7 +40,7 @@ public class UserController {
 		return uService.getAllUsers();
 	}
 	
-	@RequestMapping(value="getAllUsers", method = RequestMethod.GET)
+	@RequestMapping(value="getAUserById", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	@CrossOrigin(origins = "http://localhost:4200")
 	@ResponseBody
