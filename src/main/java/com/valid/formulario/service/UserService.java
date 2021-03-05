@@ -38,7 +38,10 @@ public class UserService{
 		
 		User u = new User(firstName, lastname, false);
 		
-		int uId = uRepo.save(u).getId();
+		User uAux = uRepo.save(u);
+		
+		int uId = uAux.getId();
+		
 		return uId;
 	}
 	
