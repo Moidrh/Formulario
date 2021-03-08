@@ -18,12 +18,19 @@ import com.valid.formulario.service.UserService;
 @SpringBootTest
 class FormularioApplicationTests {
 	
+	/**
+	 * There are some tests
+	 * */
+	
 	@Mock
 	private UserRepository ur;
 	
 	@InjectMocks
 	private UserService us;
 	
+	/**
+	 * Test the user creation
+	 * */
 	@Test
 	public void createUser() {
 		
@@ -33,7 +40,10 @@ class FormularioApplicationTests {
 		
 		assertEquals(1, u.getId());
 	}
-	
+
+	/**
+	 * Test get all the users
+	 * */
 	@Test
 	public void getAllUsers() {
 		
@@ -63,6 +73,9 @@ class FormularioApplicationTests {
 		
 	}
 
+	/**
+	 * Test get a user by id
+	 * */
 	@Test
 	public void getAUser() {
 		
